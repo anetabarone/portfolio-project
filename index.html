@@ -28,15 +28,28 @@
     ></script>
   </head>
   <body>
-    <nav>
-      <img src="images/logo.png" class="logo" alt="Logo SheCodes" />
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Work</li>
-        <li>Contact</li>
-      </ul>
-    </nav>
+    <div class="container">
+      <nav class="d-flex justify-content-between">
+        <img
+          src="images/logo.png"
+          class="logo d-none d-md-block"
+          alt="Logo SheCodes"
+        />
+        <img
+          src="images/logo_small.jpg"
+          class="logo d-block d-md-none"
+          alt="Logo SheCodes"
+        />
+
+        <ul>
+          <li class="active"><a href="/">Home</a></li>
+          <!---  the class "active" can be also added to the <a href --->
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/work.html">Work</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
     <div class="hero">
       <p>👋 Hello, I am</p>
       <h1>Patricia Pereira</h1>
